@@ -1,0 +1,16 @@
+# Parking
+matrix:
+  include:    
+    - language: c  
+      sudo: false # only for faster builds  
+      compiler:
+        - gcc
+      script:  
+        - gcc -o Chrismustree Chrismustree.c 
+        - ./Chrismustree
+        - gcc -o traingle triangle.c
+        - ./traingle
+        - gcc -o parellel parellel.c
+        - ./parellel
+        - gcc -o pattern pattern.c
+        - ./pattern
